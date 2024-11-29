@@ -73,63 +73,21 @@ Arquitetura Hexagonal (Ports and Adapters) e Clean Architecture foram adotadas n
 - **Gradle 8**
 - **Kubernetes**
 
-### APIs Disponíveis
+### Serviços Disponíveis
 
-O TechFood expõe as seguintes APIs para integração:
+O TechFood expõe os seguintes serviços para integração:
 
-- **Cadastro do Cliente:** API para cadastrar novos clientes no sistema.
-- **Identificação do Cliente via CPF:** API para identificar clientes existentes utilizando o CPF.
-- **Gerenciamento de Produtos:** APIs para criar, editar e remover produtos do menu, além de buscar produtos por categoria.
-- **Checkout:** API para o checkout de pedidos, enviando os produtos escolhidos para a fila de preparação.
-- **Acompanhamento de Pedidos:** API para listar os pedidos em andamento e o tempo de espera de cada pedido.
+- **Techfood Clientes:** API para gerenciamento de clientes no sistema.
+- **Techfood Produtos:** API para gerenciamento de produtos no sistema.
+- **Techfood Pedidos:** API para gerenciamento de pedidos no sistema.
 
-### Como Executar
-
-Para executar o sistema, siga as instruções abaixo:
-
-1. Certifique-se de ter o Docker, Docker Compose, Docker Desktop instalados em seu computador.
-2. Clone o repositório, no terminal executando o comando:
-
-```
-$ git clone https://github.com/FIAP-7SOAT/tech-challenge-app
-```
-
-3. Entre na pasta do projeto:
-
-```
-$ cd tech-challenge-app
-```
-
-4. Escolha como quer executar
-
-- [Docker](docs/docker.md)
-- [Kubernetes](docs/kubernetes.md)
-
-### Banco de dados
-
-Leia a documentação do banco de dados [aqui](docs/database.md)
-
-Para vizualizar o Banco de Dados através, recomendamos que baixe o DBeaver ou outro Gerenciador de banco de dados para PostgreSQL de sua preferência:
-
-- Criar nova conexão
-- Host: localhost
-- Port: 5432
-- Database: techfood
-- Username: postgres
-- Password: postgres
-
-### Acessando Swagger
-
-Acesse a documentação da API através do Swagger para começar a interagir com o sistema.
-Para acessar o Swagger utilize a url [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html).
-
-### Postman Collection
+### Postman Collections
 
 Baixar o Postman ou o API Client de sua preferência e importar a collection:
 
 [API Client Collection](src/main/resources/collection/fiap_techfood_postman_collection.json).
 
-### Video da Arquitetura
+### Video da Arquitetura Monolito
 
 - [Funcionamento da apliação](https://www.youtube.com/watch?v=33iDsv87Nnc&ab_channel=PedroCantarelli).
 - [Arquitetura do Projeto](https://www.youtube.com/watch?v=a7mExdMBwO4&ab_channel=PedroCantarelli)
