@@ -10,13 +10,12 @@ Autores membros do Grupo:
 
 ## Índice
 
-- [Visão Geral](#visão-geral)
 - [Requisitos](#requisitos)
 - [Domain-Driven Development (DDD)](#domain-driven-development-ddd)
 - [Arquitetura](#arquitetura)
-- [Funcionalidades Principais](#funcionalidades-principais)
-- [Principais Tecnologias Utilizadas](#principais-tecnologias-utilizadas)
 - [Serviços Disponíveis](#serviços-disponíveis)
+- [Principais Tecnologias Utilizadas](#principais-tecnologias-utilizadas)
+
 - [Postman Collection](#postman-collection)
 
 ## Requisitos
@@ -28,6 +27,8 @@ No atual momento, os requisitos do sistema são:
 - Gerenciamento de pedidos, com acompanhamento e pagamento.
 - Gerenciamento de clientes
 - Gerenciamento de produtos e categorias
+
+Saiba mais sobre os requisitos de forma detalhada [aqui](https://github.com/FIAP-7SOAT/techfood-docs/blob/main/requirements.md)!
 
 ### Domain-Driven Development (DDD)
 
@@ -50,13 +51,18 @@ Separamos a aplicação monolito em microsserviços, agora cada serviçoe é res
 [Arquitetura Kubernetes](https://www.figma.com/board/JpMG7uY03GHnNY92hHxdb3/Lanchonete-de-Bairro?node-id=0-1&t=W1aQzvEzhq0IOrMn-0)
 ![Arquitetura Kubernetes](https://cdn.discordapp.com/attachments/1310749229756448779/1311866269581971466/image.png?ex=674a6a2b&is=674918ab&hm=ce4fffdc31a8924c02f80207b496483c82a47cb3a786699636593745c6e07dd7&)
 
+### Video da Arquitetura Monolito
+
+- [Funcionamento da apliação](https://www.youtube.com/watch?v=33iDsv87Nnc&ab_channel=PedroCantarelli).
+- [Arquitetura do Projeto](https://www.youtube.com/watch?v=a7mExdMBwO4&ab_channel=PedroCantarelli)
+
 ## Serviços Disponíveis
 
 O TechFood expõe os seguintes serviços para integração:
 
 - **[Techfood Clientes](https://github.com/FIAP-7SOAT/techfood-clientes):** API para gerenciamento de clientes no sistema.
-- **[Techfood Produtos](https://github.com/FIAP-7SOAT/techfood-produtos):** API para gerenciamento de produtos no sistema.
 - **[Techfood Pedidos](https://github.com/FIAP-7SOAT/techfood-pedidos):** API para gerenciamento de pedidos no sistema.
+- **[Techfood Produtos](https://github.com/FIAP-7SOAT/techfood-produtos):** API para gerenciamento de produtos no sistema.
 
 ### Funcionalidades Principais
 
@@ -65,15 +71,15 @@ O TechFood expõe os seguintes serviços para integração:
 - **Acompanhamento de Pedido:** Os clientes podem acompanhar o status de seus pedidos, desde o momento em que são recebidos até estarem prontos para retirada.
 - **Gerenciamento Administrativo:** Os administradores têm acesso a um painel de controle para gerenciar clientes, produtos, categorias e pedidos em andamento.
 
-- ### Postman Collections
+### Postman Collections
 
 Baixar o Postman ou o API Client de sua preferência e importar a collection:
 
-- [Techfood Clientes]()
-- [Techfood Produtos]()
-- [Techfood Pedidos]()
+- [Techfood Clientes](https://github.com/FIAP-7SOAT/techfood-docs/blob/main/Postman/TechFood%20Clientes%20Collection.postman_collection.json)
+- [Techfood Pedidos](https://github.com/FIAP-7SOAT/techfood-docs/blob/main/Postman/TechFood%20Pedidos%20Collection.postman_collection.json)
+- [Techfood Produtos](https://github.com/FIAP-7SOAT/techfood-docs/blob/main/Postman/TechFood%20Produtos%20Collection.postman_collection.json)
 
-### Principais Tecnologias Utilizadas
+## Principais Tecnologias Utilizadas
 
 - **Kotlin**
 - **Java 17**
@@ -83,8 +89,3 @@ Baixar o Postman ou o API Client de sua preferência e importar a collection:
 - **Swagger**
 - **Gradle 8**
 - **Kubernetes**
-
-### Video da Arquitetura Monolito
-
-- [Funcionamento da apliação](https://www.youtube.com/watch?v=33iDsv87Nnc&ab_channel=PedroCantarelli).
-- [Arquitetura do Projeto](https://www.youtube.com/watch?v=a7mExdMBwO4&ab_channel=PedroCantarelli)
