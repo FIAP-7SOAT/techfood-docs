@@ -16,10 +16,7 @@ Autores membros do Grupo:
 - [Arquitetura](#arquitetura)
 - [Funcionalidades Principais](#funcionalidades-principais)
 - [Principais Tecnologias Utilizadas](#principais-tecnologias-utilizadas)
-- [APIs Disponíveis](#apis-disponíveis)
-- [Como Executar](#como-executar)
-- [Acessando Swagger](#acessando-swagger)
-- [Banco de dados](#banco-de-dados)
+- [Serviços Disponíveis](#serviços-disponíveis)
 - [Postman Collection](#postman-collection)
 
 ## Requisitos
@@ -57,9 +54,9 @@ Separamos a aplicação monolito em microsserviços, agora cada serviçoe é res
 
 O TechFood expõe os seguintes serviços para integração:
 
-- **Techfood Clientes:** API para gerenciamento de clientes no sistema.
-- **Techfood Produtos:** API para gerenciamento de produtos no sistema.
-- **Techfood Pedidos:** API para gerenciamento de pedidos no sistema.
+- **[Techfood Clientes](https://github.com/FIAP-7SOAT/techfood-clientes):** API para gerenciamento de clientes no sistema.
+- **[Techfood Produtos](https://github.com/FIAP-7SOAT/techfood-produtos):** API para gerenciamento de produtos no sistema.
+- **[Techfood Pedidos](https://github.com/FIAP-7SOAT/techfood-pedidos):** API para gerenciamento de pedidos no sistema.
 
 ### Funcionalidades Principais
 
@@ -67,6 +64,14 @@ O TechFood expõe os seguintes serviços para integração:
 - **Pagamento Integrado:** Integração com o Mercado Pago, permitindo que os clientes efetuem o pagamento de seus pedidos através de um QRCode.
 - **Acompanhamento de Pedido:** Os clientes podem acompanhar o status de seus pedidos, desde o momento em que são recebidos até estarem prontos para retirada.
 - **Gerenciamento Administrativo:** Os administradores têm acesso a um painel de controle para gerenciar clientes, produtos, categorias e pedidos em andamento.
+
+- ### Postman Collections
+
+Baixar o Postman ou o API Client de sua preferência e importar a collection:
+
+- [Techfood Clientes]()
+- [Techfood Produtos]()
+- [Techfood Pedidos]()
 
 ### Principais Tecnologias Utilizadas
 
@@ -78,12 +83,6 @@ O TechFood expõe os seguintes serviços para integração:
 - **Swagger**
 - **Gradle 8**
 - **Kubernetes**
-
-### Postman Collections
-
-Baixar o Postman ou o API Client de sua preferência e importar a collection:
-
-[API Client Collection](src/main/resources/collection/fiap_techfood_postman_collection.json).
 
 ### Video da Arquitetura Monolito
 
