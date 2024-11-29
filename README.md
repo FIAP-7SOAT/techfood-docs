@@ -14,7 +14,7 @@
 - [Banco de dados](#banco-de-dados)
 - [Postman Collection](#postman-collection)
 
-### Visão Geral
+## Visão Geral
 
 Este é um projeto do curso de Pós-graduação em Arquitetura de Software da FIAP compreende uma solução possível para um sistema de autoatendimento de restaurante do tipo fast-food, com quiosques ou terminais de autoatendimento, com o objetivo de otimizar o processo de pedidos, pagamento, preparação e entrega de comida..
 
@@ -24,7 +24,7 @@ Autores membros do Grupo:
 - Pedro Cantarelli - RM355410
 - Vinicius Lopes - RM354901
 
-### Requisitos
+## Requisitos
 
 Em geral os clientes e administradores usarão o sistema, que dependerá de um serviço de pagamento externo.
 
@@ -42,29 +42,18 @@ A abordagem utilizada para o desenvolvimento foi a DDD, com as seguintes saídas
 - [Event storming](https://www.figma.com/board/JpMG7uY03GHnNY92hHxdb3/Lanchonete-de-Bairro?node-id=0-1&t=TfMJyuLNDTmXck6Z-0)
 - Storytelling
 - Mapa de Contexto
+- [Modelagem de Microsserviços](https://www.figma.com/board/JpMG7uY03GHnNY92hHxdb3/Lanchonete-de-Bairro?node-id=299-2156&node-type=text&t=h5gsXNpOwHQ7cpOO-0)
 
-### Arquitetura
+## Arquitetura
 
 O sistema expõe RESTful APIs para aplicações front-end, como terminais de autoatendimento para clientes e interfaces para administradores. Tem como dependência um provedor externo de pagamento, o MercadoPago.
 
 Arquitetura Hexagonal (Ports and Adapters) e Clean Architecture foram adotadas no projeto.
 
-#### Recursos provisionados no Kubernetes
-
-Lista de arquivos YAML com recursos do Kubernetes:
-
-- **config-db.yaml:** Configurações necessárias para o funcionamento do banco de dados;
-- **deployment-app.yaml:** Deployment para disponibilização da aplicação;
-- **deployment-db.yaml:** Deployment para disponibilização do banco de dados;
-- **hpa-app.yaml:** Mapeamento de quantidade de réplicas para escalabilidade da aplicação;
-- **pv-db.yaml:** Mapeamento de persistência de volume para os arquivos de banco de dados;
-- **pvc-db.yaml:** Mapeamento de persistência de volume com configuração de claims para os volumes do banco de dados;
-- **secrets.yaml:** Armazenamento das chaves/tokens para a API;
-- **service-app.yaml:** Mapeamento das portar para acesso ao serviço NodePort da aplicação;
-- **service-db.yaml:** Mapeamento das portas para acesso ao serviço ClusterIP de banco de dados;
+### Arquitetura Kubernetes
 
 [Arquitetura Kubernetes](https://www.figma.com/board/JpMG7uY03GHnNY92hHxdb3/Lanchonete-de-Bairro?node-id=0-1&t=W1aQzvEzhq0IOrMn-0)
-![Arquitetura Kubernetes](https://i.imgur.com/GXjyJq9.png)
+![Arquitetura Kubernetes](https://cdn.discordapp.com/attachments/1310749229756448779/1311866269581971466/image.png?ex=674a6a2b&is=674918ab&hm=ce4fffdc31a8924c02f80207b496483c82a47cb3a786699636593745c6e07dd7&)
 
 ### Funcionalidades Principais
 
