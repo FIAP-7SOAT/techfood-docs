@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "d351ce78-1972-47a9-8f48-ec77faa056a5",
+		"name": "TechFood Produtos Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39998733"
+	},
+	"item": [
+		{
+			"name": "Produtos",
+			"item": [
+				{
+					"name": "01 - Cadastrar Produto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Guarana\",\n    \"description\": \"Guarana lata\",\n    \"price\": 5.99,\n    \"category\": \"DRINK\",\n    \"imageURL\": \"https://example.com/image.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/products",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Listar Produtos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/products",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Listar Produtos por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/products/f2be4518-ee64-41d6-8d46-8e0c9cd210a8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"f2be4518-ee64-41d6-8d46-8e0c9cd210a8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Listar Produtos por Categooria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/products/category?name=SNACK",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"category"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "SNACK"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Atualizar Produto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"name\": \"Guarana test2\",\n        \"description\": \"Guarana lata test\",\n        \"price\": 5.98,\n        \"category\": \"DRINK\",\n        \"imageURL\": \"https://example.com/image.jpg\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/products/b140c362-27bf-4440-840b-4c9c5e0c38bf",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"b140c362-27bf-4440-840b-4c9c5e0c38bf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Excluir Produto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/products/bbd395af-f347-4ca6-8c66-c03e2c5e8648",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"bbd395af-f347-4ca6-8c66-c03e2c5e8648"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8082",
+			"type": "string"
+		}
+	]
+}
