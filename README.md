@@ -14,7 +14,6 @@ Autores membros do Grupo:
 - [Domain-Driven Development (DDD)](#domain-driven-development-ddd)
 - [Arquitetura](#arquitetura)
 - [Serviços Disponíveis](#serviços-disponíveis)
-- [Principais Tecnologias Utilizadas](#principais-tecnologias-utilizadas)
 
 - [Postman Collection](#postman-collection)
 
@@ -80,14 +79,3 @@ Baixar o Postman ou o API Client de sua preferência e importar a collection:
 - [Techfood Clientes](https://github.com/FIAP-7SOAT/techfood-docs/blob/main/Postman/TechFood%20Clientes%20Collection.postman_collection.json)
 - [Techfood Pedidos](https://github.com/FIAP-7SOAT/techfood-docs/blob/main/Postman/TechFood%20Pedidos%20Collection.postman_collection.json)
 - [Techfood Produtos](https://github.com/FIAP-7SOAT/techfood-docs/blob/main/Postman/TechFood%20Produtos%20Collection.postman_collection.json)
-
-## Principais Tecnologias Utilizadas
-
-- **Kotlin**
-- **Java 17**
-- **Spring-Boot 3.2.5**
-- **PostgreSQL**
-- **Docker**
-- **Swagger**
-- **Gradle 8**
-- **Kubernetes**
