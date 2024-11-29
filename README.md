@@ -64,6 +64,8 @@ O TechFood expõe os seguintes serviços para integração:
 - **[Techfood Pedidos](https://github.com/FIAP-7SOAT/techfood-pedidos):** API para gerenciamento de pedidos no sistema.
 - **[Techfood Produtos](https://github.com/FIAP-7SOAT/techfood-produtos):** API para gerenciamento de produtos no sistema.
 
+![Modelagem Microsserviços](https://cdn.discordapp.com/attachments/1310749229756448779/1311877105700704256/image.png?ex=674a7443&is=674922c3&hm=1bbeff2bacdbdd94dfec228936809177484ef5799fe7d94e61d1585c5b47098e&)
+
 ### Funcionalidades Principais
 
 - **Pedido Personalizado:** Os clientes podem criar pedidos personalizados, escolhendo entre uma variedade de itens, como lanches, acompanhamentos, bebidas e sobremesas.
