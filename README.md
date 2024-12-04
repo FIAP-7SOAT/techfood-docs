@@ -79,3 +79,12 @@ Baixar o Postman ou o API Client de sua preferência e importar a collection:
 - [Techfood Clientes](https://github.com/FIAP-7SOAT/techfood-docs/blob/main/Postman/TechFood%20Clientes%20Collection.postman_collection.json)
 - [Techfood Pedidos](https://github.com/FIAP-7SOAT/techfood-docs/blob/main/Postman/TechFood%20Pedidos%20Collection.postman_collection.json)
 - [Techfood Produtos](https://github.com/FIAP-7SOAT/techfood-docs/blob/main/Postman/TechFood%20Produtos%20Collection.postman_collection.json)
+
+### Video da Arquitetura Monolito
+
+- [Funcionamento da apliação](https://www.youtube.com/watch?v=33iDsv87Nnc&ab_channel=PedroCantarelli)
+- [Arquitetura do Projeto](https://www.youtube.com/watch?v=a7mExdMBwO4&ab_channel=PedroCantarelli)
+
+### Video da Arquitetura Microsserviços
+
+- [Funcionamento Deploy e CI/CD](https://www.youtube.com/watch?v=Z9E5eNEWzvw)
