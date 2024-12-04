@@ -14,8 +14,7 @@ Autores membros do Grupo:
 - [Domain-Driven Development (DDD)](#domain-driven-development-ddd)
 - [Arquitetura](#arquitetura)
 - [Serviços Disponíveis](#serviços-disponíveis)
-
-- [Postman Collection](#postman-collection)
+- [Postman Collections](#postman-collections)
 
 ## Requisitos
 
@@ -45,15 +44,9 @@ O sistema expõe RESTful APIs para aplicações front-end, como terminais de aut
 
 Separamos a aplicação monolito em microsserviços, agora cada serviçoe é responsável por uma parte da aplicação. Os microsserviços permitem que um aplicativo grande seja separado em partes independentes e menores, com cada parte tendo sua própria responsabilidade. Arquitetura Hexagonal (Ports and Adapters) e Clean Architecture foram adotadas no projeto.
 
-### Arquitetura Kubernetes
-
 [Arquitetura Kubernetes](https://www.figma.com/board/JpMG7uY03GHnNY92hHxdb3/Lanchonete-de-Bairro?node-id=0-1&t=W1aQzvEzhq0IOrMn-0)
+
 ![Arquitetura Kubernetes](https://cdn.discordapp.com/attachments/1310749229756448779/1311866269581971466/image.png?ex=674a6a2b&is=674918ab&hm=ce4fffdc31a8924c02f80207b496483c82a47cb3a786699636593745c6e07dd7&)
-
-### Video da Arquitetura Monolito
-
-- [Funcionamento da apliação](https://www.youtube.com/watch?v=33iDsv87Nnc&ab_channel=PedroCantarelli).
-- [Arquitetura do Projeto](https://www.youtube.com/watch?v=a7mExdMBwO4&ab_channel=PedroCantarelli)
 
 ## Serviços Disponíveis
 
@@ -63,7 +56,9 @@ O TechFood expõe os seguintes serviços para integração:
 - **[Techfood Pedidos](https://github.com/FIAP-7SOAT/techfood-pedidos):** API para gerenciamento de pedidos no sistema.
 - **[Techfood Produtos](https://github.com/FIAP-7SOAT/techfood-produtos):** API para gerenciamento de produtos no sistema.
 
-![Modelagem Microsserviços](https://cdn.discordapp.com/attachments/1310749229756448779/1311877105700704256/image.png?ex=674a7443&is=674922c3&hm=1bbeff2bacdbdd94dfec228936809177484ef5799fe7d94e61d1585c5b47098e&)
+[Modelagem de Microsserviços](https://www.figma.com/board/JpMG7uY03GHnNY92hHxdb3/Lanchonete-de-Bairro?node-id=299-2156&node-type=text&t=h5gsXNpOwHQ7cpOO-0)
+
+![Modelagem Microsserviços](https://cdn.discordapp.com/attachments/1310749229756448779/1311877105700704256/image.png?ex=67510bc3&is=674fba43&hm=a2f201672e782209b649fc653302564d21ef4cd6bc514538f35a8d8b18028533&)
 
 ### Funcionalidades Principais
 
@@ -88,3 +83,4 @@ Baixar o Postman ou o API Client de sua preferência e importar a collection:
 ### Video da Arquitetura Microsserviços
 
 - [Funcionamento Deploy e CI/CD](https://www.youtube.com/watch?v=Z9E5eNEWzvw)
+- [Arquitetura do Projeto](https://youtu.be/tip4l3wyAQA)
